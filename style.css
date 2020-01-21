@@ -1,0 +1,60 @@
+html {
+  color: white;
+  font-family: 'Audiowide', sans-serif;
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+body {
+  margin: 0;
+}
+
+.title {
+  min-height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  text-shadow: 10px 10px 0 rgba(0,0,0,1);
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+.content {
+  padding: 30px;
+  width: 50%;
+  margin: 30px auto;
+  background: linear-gradient(90deg, #3F5EFB -50%,  #FC466B 150%);
+  border-radius: 10px;
+}
+
+h4 {
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+p {
+  font-size: 20px;
+}
+
+span.get {
+  position:absolute;
+  font-family: monospace;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2em;
+  padding: 5px;
+}
