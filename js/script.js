@@ -48,7 +48,9 @@ function allowArrowKeysToScroll(e) {
   }
   else return;
   cards[currentCard].classList.add('active');
-  location.href = `#card${currentCard}`;
+  $('html,body').animate({
+      scrollTop: $(`#card${currentCard}`).offset().top},
+      'slow');
 }
 
 //title.addEventListener('mousemove', shadow);
@@ -56,3 +58,12 @@ cards.forEach((card, i) => {
   card.setAttribute('id', `card${i}`)
 });
 window.addEventListener('keyup', allowArrowKeysToScroll);
+
+/** JQuery Animated ScrollTo on click.
+* http://jsfiddle.net/ryXFt/3/
+*/
+$(".center-con").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".subtitle").offset().top},
+        'slow');
+});
